@@ -5,7 +5,7 @@ export const Main = (): JSX.Element => {
   return (
     <div className="main">
       <div className="div">
-        <div className="overlap">
+        {/* <div className="overlap">
           <div className="overlap-group">
             <img
               className="game"
@@ -165,7 +165,7 @@ export const Main = (): JSX.Element => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="overlap-3">
           <img
