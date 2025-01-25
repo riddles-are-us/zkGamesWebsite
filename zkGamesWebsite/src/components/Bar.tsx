@@ -1,13 +1,13 @@
 import React from "react";
 import "./Bar.css";
+import TextButton from "./common/TextButton";
 
 const Bar = () => {
   return (
     <div className="bar-overlap-3">
-      <img
-        className="bar-line"
-        src="https://c.animaapp.com/m6UthH3E/img/line-1.svg"
-      />
+      <div className="bar-vertical-line" />
+      <div className="bar-horizontal-line-1" />
+      <div className="bar-horizontal-line-2" />
 
       <img
         className="bar-zkgame-logo"
@@ -16,18 +16,6 @@ const Bar = () => {
       />
 
       <div className="bar-text-wrapper-9">More Information</div>
-
-      <p className="bar-about-us-payment">
-        About us
-        <br />
-        Payment <br />
-        Privacy Policy <br />
-        Terms and Conditions
-      </p>
-
-      <div className="bar-vertical-line" />
-      <div className="bar-horizontal-line-1" />
-      <div className="bar-horizontal-line-2" />
 
       <img
         className="bar-info"
@@ -76,6 +64,28 @@ const Bar = () => {
 
         <div className="bar-text-wrapper-12">Setting</div>
       </div>
+
+      <p className="bar-about-us-payment">
+        About us
+        <br />
+        Payment <br />
+        Privacy Policy <br />
+        Terms and Conditions
+      </p>
+      <TextButton
+        isDisabled={true}
+        text={"ASAFASAD"}
+        onClick={() => {
+          /* */
+        }}
+      />
+      <TextButton
+        isDisabled={false}
+        text={"ASAFASAD"}
+        onClick={() => {
+          /* */
+        }}
+      />
     </div>
   );
 };

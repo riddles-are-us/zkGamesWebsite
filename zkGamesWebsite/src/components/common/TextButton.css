@@ -1,0 +1,18 @@
+.text-button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.text-button:disabled {
+  cursor: default;
+}
+
+.text-button-text {
+  outline: none;
+}
