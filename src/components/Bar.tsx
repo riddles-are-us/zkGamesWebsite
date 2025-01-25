@@ -66,26 +66,38 @@ const Bar = () => {
       </div>
 
       <p className="bar-about-us-payment">
-        About us
+        <TextButton
+          isDisabled={false}
+          text={"About us"}
+          onClick={() => {
+            /* */
+          }}
+        />
         <br />
-        Payment <br />
-        Privacy Policy <br />
-        Terms and Conditions
+        <TextButton
+          isDisabled={false}
+          text={"Payment"}
+          onClick={() => {
+            /* */
+          }}
+        />
+        <br />
+        <TextButton
+          isDisabled={false}
+          text={"Privacy Policy"}
+          onClick={() => {
+            /* */
+          }}
+        />
+        <br />
+        <TextButton
+          isDisabled={false}
+          text={"Terms and Conditions"}
+          onClick={() => {
+            /* */
+          }}
+        />
       </p>
-      <TextButton
-        isDisabled={true}
-        text={"ASAFASAD"}
-        onClick={() => {
-          /* */
-        }}
-      />
-      <TextButton
-        isDisabled={false}
-        text={"ASAFASAD"}
-        onClick={() => {
-          /* */
-        }}
-      />
     </div>
   );
 };

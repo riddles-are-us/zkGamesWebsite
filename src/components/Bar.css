@@ -1,10 +1,10 @@
 .bar-overlap-3 {
-  background-color: #101826;
-  height: 1360px;
-  left: 0;
   position: absolute;
+  left: 0;
   top: 0;
-  width: 371px;
+  height: 100%;
+  width: 20%;
+  background-color: #101826;
 }
 
 .bar-vertical-line {
@@ -28,20 +28,22 @@
 }
 
 .bar-horizontal-line-1 {
-  top: 32%;
-}
-
-.bar-horizontal-line-2 {
   top: 40%;
 }
 
+.bar-horizontal-line-2 {
+  top: 49%;
+}
+
 .bar-zkgame-logo {
-  height: 36px;
-  left: 41px;
-  object-fit: cover;
   position: absolute;
-  top: 41px;
-  width: 192px;
+  width: 50%;
+  height: auto;
+  aspect-ratio: 192 / 36;
+  top: 5%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 .bar-text-wrapper-9 {
