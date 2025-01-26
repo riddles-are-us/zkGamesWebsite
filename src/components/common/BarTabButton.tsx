@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./TextButton.css";
+import "./BarTabButton.css";
 import ElementButton from "./ElementButton";
 
 interface Props {
   isDisabled: boolean;
+  isSelected: boolean;
+  imagePath: string;
   text: string;
   fontRatio: number;
   defaultTextColor?: string;
@@ -13,8 +15,10 @@ interface Props {
   onClick: () => void;
 }
 
-const TextButton = ({
+const BarTabButton = ({
   isDisabled,
+  isSelected,
+  imagePath,
   text,
   fontRatio,
   defaultTextColor = "#e6e6e6",
@@ -43,16 +47,23 @@ const TextButton = ({
 
   const getElement = (color: string) => {
     return (
-      <p
-        ref={textRef}
-        className="text-button"
-        style={{
-          fontSize: fontSize,
-          color: defaultTextColor,
-        }}
+      <div
+        className={
+          isSelected ? "bar-tab-selected-container" : "bar-tab-normal-container"
+        }
       >
-        {text}
-      </p>
+        <img className="bar-tab-button-image" src={imagePath} />
+        <p
+          ref={textRef}
+          className="bar-tab-button-text"
+          style={{
+            fontSize: fontSize,
+            color: color,
+          }}
+        >
+          {text}
+        </p>
+      </div>
     );
   };
 
@@ -68,4 +79,4 @@ const TextButton = ({
   );
 };
 
-export default TextButton;
+export default BarTabButton;

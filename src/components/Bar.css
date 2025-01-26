@@ -5,6 +5,8 @@
   height: 100%;
   width: 20%;
   background-color: #101826;
+  display: flex;
+  flex-direction: row;
 }
 
 .bar-vertical-line {
@@ -35,15 +37,38 @@
   top: 49%;
 }
 
-.bar-zkgame-logo {
+.bar-tab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  width: 100%;
+}
+
+.bar-zkgame-logo-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 192 / 72;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bar-zkgame-logo-image {
   position: absolute;
   width: 50%;
-  height: auto;
-  aspect-ratio: 192 / 36;
-  top: 5%;
-  left: 40%;
+  height: 25%;
+  left: 35%;
+  top: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.bar-tab-button-container {
+  position: relative;
+  width: 90%;
+  height: auto;
+  aspect-ratio: 317 / 84;
+  left: 5%;
 }
 
 .bar-about-us-payment {
