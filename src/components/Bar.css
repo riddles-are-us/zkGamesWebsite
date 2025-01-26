@@ -46,18 +46,6 @@
   object-fit: cover;
 }
 
-.bar-text-wrapper-9 {
-  color: #ffffff;
-  font-family: "Inter", Helvetica;
-  font-size: 22px;
-  font-weight: 500;
-  left: 86px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 696px;
-}
-
 .bar-about-us-payment {
   color: #ffffff99;
   font-family: "Inter", Helvetica;
@@ -109,6 +97,18 @@
   object-fit: cover;
   position: relative;
   width: 42px;
+}
+
+.bar-text-wrapper-9 {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  left: 86px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 696px;
 }
 
 .bar-text-wrapper-10 {
