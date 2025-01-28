@@ -40,16 +40,21 @@ const ContentBar = ({ fontRatio }: Props) => {
 
   return (
     <div className="content-bar-container">
-      <div className="content-search">
-        <div className="content-overlap-group-2">
-          <img
-            className="content-img"
-            alt="Search"
-            src="https://c.animaapp.com/m6UthH3E/img/search-1@2x.png"
-          />
+      <div className="content-search-container">
+        <img
+          className="content-bar-search-image"
+          alt="Search"
+          src="https://c.animaapp.com/m6UthH3E/img/search-1@2x.png"
+        />
 
-          <input className="content-input" placeholder="Search" type="text" />
-        </div>
+        <input
+          className="content-bar-input"
+          placeholder="Search"
+          type="text"
+          style={{
+            fontSize: fontSize * 2,
+          }}
+        />
       </div>
 
       <div className="content-bar-right-list">
@@ -70,7 +75,7 @@ const ContentBar = ({ fontRatio }: Props) => {
           className="content-bar-user-name-text"
           style={{
             fontSize: fontSize,
-            width: `${textWidth}px`, // Dynamically adjust width
+            width: `${textWidth}px`,
           }}
         >
           Name

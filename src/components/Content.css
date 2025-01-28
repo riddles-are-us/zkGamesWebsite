@@ -80,31 +80,6 @@
   width: 504px;
 }
 
-.content-img {
-  height: 29px;
-  left: 15px;
-  object-fit: cover;
-  position: absolute;
-  top: 13px;
-  width: 27px;
-}
-
-.content-input {
-  background: transparent;
-  border: none;
-  color: #ffffff4c;
-  font-family: "Inter", Helvetica;
-  font-size: 26px;
-  font-weight: 400;
-  left: 61px;
-  letter-spacing: 0;
-  line-height: normal;
-  padding: 0;
-  position: absolute;
-  top: 11px;
-  white-space: nowrap;
-}
-
 .content-game {
   height: 697px;
   left: 0;
