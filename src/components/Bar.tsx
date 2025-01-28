@@ -6,7 +6,7 @@ import BarMoreInformationButton from "./common/BarMoreInformationButton";
 
 const Bar = () => {
   return (
-    <div className="bar-overlap-3">
+    <div className="bar-container">
       <div className="bar-vertical-line" />
 
       <div className="bar-tab-list">

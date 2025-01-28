@@ -1,45 +1,32 @@
-.content-overlap {
+.content-container {
+  position: absolute;
+  left: 20%;
+  top: 0;
+  height: 100%;
+  width: 80%;
   background-color: #101826;
-  height: 1360px;
-  left: 371px;
-  position: absolute;
-  top: 0;
-  width: 1549px;
+  display: flex;
+  flex-direction: column;
 }
 
-.content-overlap-group {
-  height: 701px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1549px;
+.content-bar-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1549 / 104;
 }
 
-.content-game {
-  height: 697px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 1549px;
+.content-detail-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1549 / 701;
 }
 
-.content-top-mask {
-  height: 597px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 104px;
-  width: 1547px;
-}
-
-.content-top-bar {
-  background-color: #101826;
-  height: 104px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1549px;
+.content-game-list-container {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .content-search {
@@ -48,6 +35,41 @@
   position: absolute;
   top: 28px;
   width: 506px;
+}
+
+.content-bar-notification-image {
+  position: relative;
+  width: auto;
+  height: 30%;
+  aspect-ratio: 26 / 29;
+  object-fit: cover;
+}
+
+.content-bar-more-image {
+  position: relative;
+  width: auto;
+  height: 10%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.content-bar-user-name-text {
+  position: relative;
+  width: auto;
+  height: 60%;
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2.38px;
+  line-height: 34px;
+  white-space: nowrap;
+}
+
+.content-bar-user-image {
+  position: relative;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .content-overlap-group-2 {
@@ -83,22 +105,22 @@
   white-space: nowrap;
 }
 
-.content-alart {
-  height: 29px;
-  left: 1202px;
+.content-game {
+  height: 697px;
+  left: 0;
   object-fit: cover;
   position: absolute;
-  top: 41px;
-  width: 26px;
+  top: 0;
+  width: 1549px;
 }
 
-.content-more {
-  height: 9px;
-  left: 1492px;
+.content-top-mask {
+  height: 597px;
+  left: 0;
   object-fit: cover;
   position: absolute;
-  top: 47px;
-  width: 16px;
+  top: 104px;
+  width: 1547px;
 }
 
 .content-text-wrapper {
@@ -149,7 +171,7 @@
   font-weight: 700;
   height: 1px;
   left: 133px;
-  letter-spacing: 2.10px;
+  letter-spacing: 2.1px;
   line-height: 30px;
   position: absolute;
   top: 603px;
@@ -191,29 +213,6 @@
   line-height: 22px;
   position: absolute;
   top: 389px;
-  white-space: nowrap;
-}
-
-.content-user {
-  height: 55px;
-  left: 1262px;
-  object-fit: cover;
-  position: absolute;
-  top: 25px;
-  width: 55px;
-}
-
-.content-text-wrapper-5 {
-  color: #ffffff;
-  font-family: "Inter", Helvetica;
-  font-size: 34px;
-  font-weight: 700;
-  height: 1px;
-  left: 62px;
-  letter-spacing: 2.38px;
-  line-height: 34px;
-  position: absolute;
-  top: 774px;
   white-space: nowrap;
 }
 
@@ -276,7 +275,7 @@
   font-weight: 700;
   letter-spacing: 1.54px;
   line-height: 22px;
-  margin-top: -0.50px;
+  margin-top: -0.5px;
   position: relative;
   white-space: nowrap;
   width: fit-content;
@@ -301,7 +300,7 @@
   font-weight: 700;
   letter-spacing: 1.82px;
   line-height: 26px;
-  margin-top: -1.00px;
+  margin-top: -1px;
   position: relative;
 }
 
