@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ContentBar.css";
 
-interface Props {
-  fontRatio: number;
-}
+const fontRatio = 3;
 
-const ContentBar = ({ fontRatio }: Props) => {
+const ContentBar = () => {
   const textRef = useRef<HTMLParagraphElement>(null);
   const [fontSize, setFontSize] = useState<number>(0);
   const [textWidth, setTextWidth] = useState<number>(0);
@@ -19,7 +17,7 @@ const ContentBar = ({ fontRatio }: Props) => {
 
   const adjustWidth = () => {
     if (textRef.current) {
-      setTextWidth(textRef.current.scrollWidth); // Set width to the exact text content width
+      setTextWidth(textRef.current.scrollWidth);
     }
   };
 

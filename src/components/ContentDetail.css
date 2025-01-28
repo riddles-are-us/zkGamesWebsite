@@ -1,0 +1,141 @@
+.content-detail-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1549 / 701;
+}
+
+.content-background-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1549 / 697;
+}
+
+.content-background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-background-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-detail-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2%;
+  margin-bottom: 2%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.content-select {
+  background: linear-gradient(
+    180deg,
+    rgb(164, 91, 242) 0%,
+    rgb(102, 112, 251) 100%
+  );
+  border-radius: 16px;
+  height: 56px;
+  left: 62px;
+  position: absolute;
+  top: 576px;
+  width: 211px;
+}
+
+.content-text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  height: 52px;
+  left: 62px;
+  letter-spacing: 4.48px;
+  line-height: 64px;
+  position: absolute;
+  top: 435px;
+  white-space: nowrap;
+  width: 341px;
+}
+
+.content-text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  height: 1px;
+  left: 133px;
+  letter-spacing: 2.1px;
+  line-height: 30px;
+  position: absolute;
+  top: 603px;
+  white-space: nowrap;
+}
+
+.content-detail-title-text {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 10%;
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  white-space: nowrap;
+  margin: 0;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.content-detail-description-text {
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  height: 10%;
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  white-space: nowrap;
+  margin: 0;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.content-trending {
+  background-color: #1aff70;
+  border-radius: 50px;
+  height: 39px;
+  left: 61px;
+  position: absolute;
+  top: 370px;
+  width: 148px;
+}
+
+.content-text-wrapper-4 {
+  color: #101826;
+  font-family: "Inter", Helvetica;
+  font-size: 22px;
+  font-weight: 700;
+  height: 1px;
+  left: 80px;
+  letter-spacing: 1.54px;
+  line-height: 22px;
+  position: absolute;
+  top: 389px;
+  white-space: nowrap;
+}
