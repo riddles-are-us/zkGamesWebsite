@@ -36,7 +36,7 @@ const ContentBar = ({ fontRatio }: Props) => {
         adjustWidth();
       });
     };
-  }, [textRef]);
+  }, [textRef, fontSize]);
 
   return (
     <div className="content-bar-container">
@@ -73,7 +73,7 @@ const ContentBar = ({ fontRatio }: Props) => {
             width: `${textWidth}px`, // Dynamically adjust width
           }}
         >
-          Name name namename namename name
+          Name
         </p>
 
         <img
