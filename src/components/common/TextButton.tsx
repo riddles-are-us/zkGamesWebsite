@@ -6,6 +6,7 @@ interface Props {
   isDisabled: boolean;
   text: string;
   fontRatio: number;
+  textAlign?: "left" | "center";
   defaultTextColor?: string;
   hoverTextColor?: string;
   clickedTextColor?: string;
@@ -17,6 +18,7 @@ const TextButton = ({
   isDisabled,
   text,
   fontRatio,
+  textAlign = "center",
   defaultTextColor = "#e6e6e6",
   hoverTextColor = "#ffffff",
   clickedTextColor = "#e6e6e6",
@@ -47,6 +49,7 @@ const TextButton = ({
         ref={textRef}
         className="text-button"
         style={{
+          textAlign: textAlign,
           fontSize: fontSize,
           color: defaultTextColor,
         }}

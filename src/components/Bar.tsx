@@ -96,6 +96,7 @@ const Bar = () => {
             isDisabled={false}
             text={"About us"}
             fontRatio={15}
+            textAlign={"left"}
             onClick={() => {
               /* */
             }}
@@ -106,6 +107,7 @@ const Bar = () => {
             isDisabled={false}
             text={"Payment"}
             fontRatio={15}
+            textAlign={"left"}
             onClick={() => {
               /* */
             }}
@@ -116,6 +118,7 @@ const Bar = () => {
             isDisabled={false}
             text={"Privacy Policy"}
             fontRatio={15}
+            textAlign={"left"}
             onClick={() => {
               /* */
             }}
@@ -126,6 +129,7 @@ const Bar = () => {
             isDisabled={false}
             text={"Terms and Conditions"}
             fontRatio={15}
+            textAlign={"left"}
             onClick={() => {
               /* */
             }}
