@@ -50,7 +50,7 @@
   position: relative;
   width: 10%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 5%;
   aspect-ratio: 148 / 39;
   background-color: #1aff70;
   border-radius: 50px;
@@ -82,7 +82,7 @@
   font-family: "Inter", Helvetica;
   white-space: nowrap;
   margin: 0;
-  margin-left: 10%;
+  margin-left: 5%;
   align-items: center;
   font-weight: bold;
 }
@@ -91,20 +91,19 @@
   position: relative;
   display: flex;
   width: 80%;
-  margin-left: 10%;
+  margin: 0;
+  margin-left: 5%;
   height: 10%;
   color: #ffffff;
   font-family: "Inter", Helvetica;
   white-space: nowrap;
-  margin: 0;
-  margin-left: 10%;
 }
 
 .content-detail-play-container {
   position: relative;
   width: 20%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 5%;
   aspect-ratio: 211 / 56;
   background: linear-gradient(
     180deg,
