@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ContentDetail.css";
 import TextButton from "./common/TextButton";
 
-const titleFontRatio = 15;
+const titleFontRatio = 18;
 const descriptionFontRatio = 60;
 const trendingFontRatio = 4;
 

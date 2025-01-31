@@ -11,7 +11,7 @@
   height: 100%;
   right: 0;
   display: flex;
-  gap: 2%;
+  gap: 4%;
   margin-right: 2%;
   flex-direction: row;
   justify-content: flex-end;
@@ -21,9 +21,9 @@
 .content-search-container {
   position: absolute;
   width: auto;
-  height: 70%;
+  height: 60%;
   aspect-ratio: 10 / 1;
-  left: 25%;
+  left: 22%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #d9d9d91a;
