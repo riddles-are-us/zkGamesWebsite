@@ -22,9 +22,9 @@ const BarTabButton = ({
   text,
   fontRatio,
   defaultTextColor = "#e6e6e6",
-  hoverTextColor = "#ffffff",
-  clickedTextColor = "#e6e6e6",
-  disabledTextColor = "#808080",
+  hoverTextColor = "rgb(164, 91, 242)",
+  clickedTextColor = "rgb(164, 91, 242)",
+  disabledTextColor = "#e6e6e6",
   onClick,
 }: Props) => {
   const textRef = useRef<HTMLParagraphElement>(null);
