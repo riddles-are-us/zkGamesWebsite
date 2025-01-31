@@ -4,7 +4,7 @@ import ElementButton from "./ElementButton";
 
 interface Props {
   isDisabled: boolean;
-  imagePath: string;
+  thumbnailPath: string;
   text: string;
   fontRatio: number;
   defaultTextColor?: string;
@@ -16,7 +16,7 @@ interface Props {
 
 const BarMoreInformationButton = ({
   isDisabled,
-  imagePath,
+  thumbnailPath,
   text,
   fontRatio,
   defaultTextColor = "#e6e6e6",
@@ -46,7 +46,10 @@ const BarMoreInformationButton = ({
   const getElement = (color: string) => {
     return (
       <>
-        <img className="bar-more-information-button-image" src={imagePath} />
+        <img
+          className="bar-more-information-button-image"
+          src={thumbnailPath}
+        />
         <p
           ref={textRef}
           className="bar-more-information-button-text"

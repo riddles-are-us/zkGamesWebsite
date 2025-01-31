@@ -5,7 +5,7 @@ import ElementButton from "./ElementButton";
 interface Props {
   isDisabled: boolean;
   isSelected: boolean;
-  imagePath: string;
+  thumbnailPath: string;
   text: string;
   fontRatio: number;
   defaultTextColor?: string;
@@ -18,7 +18,7 @@ interface Props {
 const BarTabButton = ({
   isDisabled,
   isSelected,
-  imagePath,
+  thumbnailPath,
   text,
   fontRatio,
   defaultTextColor = "#e6e6e6",
@@ -52,7 +52,7 @@ const BarTabButton = ({
           isSelected ? "bar-tab-selected-container" : "bar-tab-normal-container"
         }
       >
-        <img className="bar-tab-button-image" src={imagePath} />
+        <img className="bar-tab-button-image" src={thumbnailPath} />
         <p
           ref={textRef}
           className="bar-tab-button-text"

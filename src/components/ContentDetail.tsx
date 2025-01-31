@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ContentDetail.css";
 import TextButton from "./common/TextButton";
 import mask from "../images/backgrounds/mask.png";
+import { gameDatas } from "./GameDatas";
 
 const titleFontRatio = 18;
 const descriptionFontRatio = 60;

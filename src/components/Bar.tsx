@@ -27,7 +27,7 @@ const Bar = () => {
           <BarTabButton
             isDisabled={false}
             isSelected={true}
-            imagePath={trending}
+            thumbnailPath={trending}
             text={"Trending"}
             fontRatio={7}
             onClick={() => {
@@ -40,7 +40,7 @@ const Bar = () => {
           <BarTabButton
             isDisabled={false}
             isSelected={false}
-            imagePath={favorite}
+            thumbnailPath={favorite}
             text={"Favorite"}
             fontRatio={7}
             onClick={() => {
@@ -53,7 +53,7 @@ const Bar = () => {
           <BarTabButton
             isDisabled={false}
             isSelected={false}
-            imagePath={wallet}
+            thumbnailPath={wallet}
             text={"Wallet"}
             fontRatio={7}
             onClick={() => {
@@ -69,7 +69,7 @@ const Bar = () => {
           <BarTabButton
             isDisabled={false}
             isSelected={false}
-            imagePath={setting}
+            thumbnailPath={setting}
             text={"Setting"}
             fontRatio={7}
             onClick={() => {
@@ -85,7 +85,7 @@ const Bar = () => {
         <div className="bar-more-information-button-container">
           <BarMoreInformationButton
             isDisabled={false}
-            imagePath={info}
+            thumbnailPath={info}
             text={"More Information"}
             fontRatio={10}
             onClick={() => {

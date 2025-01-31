@@ -2,32 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ContentList.css";
 import ContentGameCard from "./ContentGameCard";
 import Grid from "./common/Grid";
-import disco from "../images/datas/disco.png";
-import automata from "../images/datas/automata.png";
+import { gameDatas } from "./GameDatas";
 
 const fontRatio = 4;
 const columnCount = 4;
-
-interface GameData {
-  title: string;
-  description: string;
-  link: string;
-  imagePath: string;
-}
-const gameDatas: GameData[] = [
-  {
-    title: "MemeDisco",
-    description: "MemeDisco Description",
-    link: "https://disco.zkplay.app/",
-    imagePath: disco,
-  },
-  {
-    title: "Automata",
-    description: "Automata Description",
-    link: "https://automata.zkplay.app/",
-    imagePath: automata,
-  },
-];
 
 const ContentList = () => {
   const rowCount = Math.ceil(gameDatas.length / columnCount);
@@ -92,7 +70,7 @@ const ContentList = () => {
                   title={gameData.title}
                   description={gameData.description}
                   link={gameData.link}
-                  imagePath={gameData.imagePath}
+                  thumbnailPath={gameData.thumbnailPath}
                 />
               ))}
           />

@@ -9,7 +9,7 @@ interface Props {
   title: string;
   description: string;
   link: string;
-  imagePath: string;
+  thumbnailPath: string;
 }
 
 const ContentGameCard = ({
@@ -18,7 +18,7 @@ const ContentGameCard = ({
   title,
   description,
   link,
-  imagePath,
+  thumbnailPath,
 }: Props) => {
   const titleTextRef = useRef<HTMLParagraphElement>(null);
   const descriptionTextRef = useRef<HTMLParagraphElement>(null);
@@ -49,7 +49,7 @@ const ContentGameCard = ({
       }}
     >
       <div className="content-game-card-container">
-        <img className="content-game-card-image" src={imagePath} />
+        <img className="content-game-card-image" src={thumbnailPath} />
         <div className="content-game-card-detail-container">
           <p
             ref={titleTextRef}
