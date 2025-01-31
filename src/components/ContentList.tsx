@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ContentList.css";
 import ContentGameCard from "./ContentGameCard";
 import Grid from "./common/Grid";
-import disco from "../images/disco.png";
+import disco from "../images/datas/disco.png";
+import automata from "../images/datas/automata.png";
 
 const fontRatio = 4;
 const columnCount = 4;
@@ -17,26 +18,14 @@ const gameDatas: GameData[] = [
   {
     title: "MemeDisco",
     description: "MemeDisco Description",
-    link: "https://www.youtube.com/watch?v=4LpNmCo2mEU&list=RDqV65UAMNmlM&index=4&ab_channel=Release-Topic",
+    link: "https://disco.zkplay.app/",
     imagePath: disco,
   },
   {
-    title: "MemeDisco",
-    description: "MemeDisco Description",
-    link: "https://www.youtube.com/watch?v=4LpNmCo2mEU&list=RDqV65UAMNmlM&index=4&ab_channel=Release-Topic",
-    imagePath: disco,
-  },
-  {
-    title: "MemeDisco",
-    description: "MemeDisco Description",
-    link: "https://www.youtube.com/watch?v=4LpNmCo2mEU&list=RDqV65UAMNmlM&index=4&ab_channel=Release-Topic",
-    imagePath: disco,
-  },
-  {
-    title: "MemeDisco",
-    description: "MemeDisco Description",
-    link: "https://www.youtube.com/watch?v=4LpNmCo2mEU&list=RDqV65UAMNmlM&index=4&ab_channel=Release-Topic",
-    imagePath: disco,
+    title: "Automata",
+    description: "Automata Description",
+    link: "https://automata.zkplay.app/",
+    imagePath: automata,
   },
 ];
 

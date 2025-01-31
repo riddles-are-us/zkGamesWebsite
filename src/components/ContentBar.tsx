@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ContentBar.css";
+import search from "../images/backgrounds/search.png";
+import notification from "../images/backgrounds/notification.png";
+import user from "../images/backgrounds/user.png";
+import more from "../images/backgrounds/more.png";
 
 const fontRatio = 3;
 
@@ -39,11 +43,7 @@ const ContentBar = () => {
   return (
     <div className="content-bar-container">
       <div className="content-search-container">
-        <img
-          className="content-bar-search-image"
-          alt="Search"
-          src="https://c.animaapp.com/m6UthH3E/img/search-1@2x.png"
-        />
+        <img className="content-bar-search-image" alt="Search" src={search} />
 
         <input
           className="content-bar-input"
@@ -58,15 +58,11 @@ const ContentBar = () => {
       <div className="content-bar-right-list">
         <img
           className="content-bar-notification-image"
-          alt="Alert"
-          src="https://c.animaapp.com/m6UthH3E/img/alart@2x.png"
+          alt="Notification"
+          src={notification}
         />
 
-        <img
-          className="content-bar-user-image"
-          alt="User"
-          src="https://c.animaapp.com/m6UthH3E/img/user@2x.png"
-        />
+        <img className="content-bar-user-image" alt="User" src={user} />
 
         <p
           ref={textRef}
@@ -79,11 +75,7 @@ const ContentBar = () => {
           Name
         </p>
 
-        <img
-          className="content-bar-more-image"
-          alt="More"
-          src="https://c.animaapp.com/m6UthH3E/img/more@2x.png"
-        />
+        <img className="content-bar-more-image" alt="More" src={more} />
       </div>
     </div>
   );

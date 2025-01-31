@@ -3,6 +3,12 @@ import "./Bar.css";
 import TextButton from "./common/TextButton";
 import BarTabButton from "./common/BarTabButton";
 import BarMoreInformationButton from "./common/BarMoreInformationButton";
+import zkgame_logo from "../images/backgrounds/zkgame_logo.png";
+import trending from "../images/backgrounds/trending.png";
+import favorite from "../images/backgrounds/favorite.png";
+import wallet from "../images/backgrounds/wallet.png";
+import setting from "../images/backgrounds/setting.png";
+import info from "../images/backgrounds/info.png";
 
 const Bar = () => {
   return (
@@ -14,16 +20,14 @@ const Bar = () => {
           <img
             className="bar-zkgame-logo-image"
             alt="Zkgame logo"
-            src="https://c.animaapp.com/m6UthH3E/img/zkgame-logo-1@2x.png"
+            src={zkgame_logo}
           />
         </div>
         <div className="bar-tab-button-container">
           <BarTabButton
             isDisabled={false}
             isSelected={true}
-            imagePath={
-              "https://c.animaapp.com/m6UthH3E/img/trending-icon@2x.png"
-            }
+            imagePath={trending}
             text={"Trending"}
             fontRatio={7}
             onClick={() => {
@@ -36,9 +40,7 @@ const Bar = () => {
           <BarTabButton
             isDisabled={false}
             isSelected={false}
-            imagePath={
-              "https://c.animaapp.com/m6UthH3E/img/favourite-icon@2x.png"
-            }
+            imagePath={favorite}
             text={"Favorite"}
             fontRatio={7}
             onClick={() => {
@@ -51,7 +53,7 @@ const Bar = () => {
           <BarTabButton
             isDisabled={false}
             isSelected={false}
-            imagePath={"https://c.animaapp.com/m6UthH3E/img/wallet@2x.png"}
+            imagePath={wallet}
             text={"Wallet"}
             fontRatio={7}
             onClick={() => {
@@ -67,7 +69,7 @@ const Bar = () => {
           <BarTabButton
             isDisabled={false}
             isSelected={false}
-            imagePath={"https://c.animaapp.com/m6UthH3E/img/setting@2x.png"}
+            imagePath={setting}
             text={"Setting"}
             fontRatio={7}
             onClick={() => {
@@ -83,7 +85,7 @@ const Bar = () => {
         <div className="bar-more-information-button-container">
           <BarMoreInformationButton
             isDisabled={false}
-            imagePath={"https://c.animaapp.com/m6UthH3E/img/info-1@2x.png"}
+            imagePath={info}
             text={"More Information"}
             fontRatio={10}
             onClick={() => {

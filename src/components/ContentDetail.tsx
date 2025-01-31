@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ContentDetail.css";
 import TextButton from "./common/TextButton";
+import mask from "../images/backgrounds/mask.png";
 
 const titleFontRatio = 18;
 const descriptionFontRatio = 60;
@@ -49,11 +50,7 @@ const ContentDetail = () => {
           alt="Game"
           src="https://c.animaapp.com/m6UthH3E/img/game1.png"
         />
-        <img
-          className="content-detail-background-mask"
-          alt="Top mask"
-          src="https://c.animaapp.com/m6UthH3E/img/top-mask.png"
-        />
+        <img className="content-detail-background-mask" alt="mask" src={mask} />
       </div>
       <div className="content-detail-list">
         <div className="content-detail-trending-container">
