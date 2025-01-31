@@ -38,15 +38,7 @@ const ContentGameCard = ({
 
   useEffect(() => {
     adjustSize();
-    window.addEventListener("resize", () => {
-      adjustSize();
-    });
-    return () => {
-      window.removeEventListener("resize", () => {
-        adjustSize();
-      });
-    };
-  }, []);
+  }, [width]);
 
   return (
     <div
