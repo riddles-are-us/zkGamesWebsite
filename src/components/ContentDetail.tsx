@@ -2,7 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import "./ContentDetail.css";
 import TextButton from "./common/TextButton";
 import mask from "../images/backgrounds/mask.png";
+import automata1 from "../images/datas/automata/1.png";
+import automata2 from "../images/datas/automata/2.png";
+import automata3 from "../images/datas/automata/3.png";
+import automata4 from "../images/datas/automata/4.png";
 import { gameDatas } from "./GameDatas";
+import Carousel from "./Carousel";
 
 const titleFontRatio = 18;
 const descriptionFontRatio = 60;
@@ -49,7 +54,7 @@ const ContentDetail = () => {
         <img
           className="content-detail-background-container"
           alt="Game"
-          src="https://c.animaapp.com/m6UthH3E/img/game1.png"
+          src={automata1}
         />
         <img className="content-detail-background-mask" alt="mask" src={mask} />
       </div>
@@ -90,6 +95,8 @@ const ContentDetail = () => {
             }}
           />
         </div>
+
+        <Carousel images={[automata1, automata2, automata3, automata4]} />
       </div>
     </div>
   );
