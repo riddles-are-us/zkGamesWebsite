@@ -9,19 +9,31 @@ import favorite from "../images/backgrounds/favorite.png";
 import wallet from "../images/backgrounds/wallet.png";
 import setting from "../images/backgrounds/setting.png";
 import info from "../images/backgrounds/info.png";
+import ImageButton from "./common/ImageButton";
+import { useNavigate } from "react-router-dom";
 
 const Bar = () => {
+  const navigate = useNavigate();
+  const onClickLogo = () => {
+    navigate(`/`);
+  };
+
   return (
     <div className="bar-container">
       <div className="bar-vertical-line" />
 
       <div className="bar-tab-list">
         <div className="bar-zkgame-logo-container">
-          <img
-            className="bar-zkgame-logo-image"
-            alt="Zkgame logo"
-            src={zkgame_logo}
-          />
+          <div className="bar-zkgame-logo-image">
+            <ImageButton
+              isDisabled={false}
+              defaultImagePath={zkgame_logo}
+              hoverImagePath={zkgame_logo}
+              clickedImagePath={zkgame_logo}
+              disabledImagePath={zkgame_logo}
+              onClick={onClickLogo}
+            />
+          </div>
         </div>
         <div className="bar-tab-button-container">
           <BarTabButton
