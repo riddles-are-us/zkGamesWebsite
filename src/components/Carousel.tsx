@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import mask from "../images/backgrounds/mask.png";
 import "./Carousel.css"; // External CSS file for styling
 
 interface Props {
@@ -24,14 +25,24 @@ const Carousel = ({ images }: Props) => {
   };
 
   return (
-    <div className="carousel-container">
-      <img className="carousel-image-1" src={images[index1]} />
-      <img className="carousel-image-2" src={images[index2]} />
-      <img className="carousel-image-3" src={images[index3]} />
+    <>
+      <div className="content-detail-background-container">
+        <img
+          className="content-detail-background-container"
+          alt="Game"
+          src={images[index1]}
+        />
+        <img className="content-detail-background-mask" alt="mask" src={mask} />
+      </div>
+      <div className="carousel-container">
+        <img className="carousel-image-1" src={images[index1]} />
+        <img className="carousel-image-2" src={images[index2]} />
+        <img className="carousel-image-3" src={images[index3]} />
 
-      <button className="carousel-btn left" onClick={prevSlide} />
-      <button className="carousel-btn right" onClick={nextSlide} />
-    </div>
+        <button className="carousel-btn left" onClick={prevSlide} />
+        <button className="carousel-btn right" onClick={nextSlide} />
+      </div>
+    </>
   );
 };
 
