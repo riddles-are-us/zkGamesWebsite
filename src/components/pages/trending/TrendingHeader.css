@@ -1,11 +1,11 @@
-.content-bar-container {
+.trending-header-container {
   position: relative;
   width: 100%;
   height: auto;
   aspect-ratio: 1549 / 104;
 }
 
-.content-bar-right-list {
+.trending-header-right-list {
   position: absolute;
   width: 50%;
   height: 100%;
@@ -30,7 +30,7 @@
   border-radius: 10px;
 }
 
-.content-bar-search-image {
+.trending-header-search-image {
   position: absolute;
   width: auto;
   height: 60%;
@@ -41,7 +41,7 @@
   object-fit: cover;
 }
 
-.content-bar-input {
+.trending-header-input {
   position: absolute;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@
   border: none;
 }
 
-.content-bar-notification-image {
+.trending-header-notification-image {
   position: relative;
   width: auto;
   height: 30%;
@@ -66,7 +66,7 @@
   object-fit: cover;
 }
 
-.content-bar-user-image {
+.trending-header-user-image {
   position: relative;
   width: auto;
   height: 60%;
@@ -74,7 +74,7 @@
   object-fit: cover;
 }
 
-.content-bar-user-name-text {
+.trending-header-user-name-text {
   position: relative;
   display: flex;
   align-items: center;
@@ -85,7 +85,7 @@
   white-space: nowrap;
 }
 
-.content-bar-more-image {
+.trending-header-more-image {
   position: relative;
   width: auto;
   height: 10%;

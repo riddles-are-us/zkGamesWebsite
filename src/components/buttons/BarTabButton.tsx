@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./BarMoreInformationButton.css";
-import ElementButton from "./ElementButton";
+import "./BarTabButton.css";
+import ElementButton from "../common/ElementButton";
 
 interface Props {
   isDisabled: boolean;
+  isSelected: boolean;
   thumbnailPath: string;
   text: string;
   fontRatio: number;
@@ -14,15 +15,16 @@ interface Props {
   onClick: () => void;
 }
 
-const BarMoreInformationButton = ({
+const BarTabButton = ({
   isDisabled,
+  isSelected,
   thumbnailPath,
   text,
   fontRatio,
   defaultTextColor = "#e6e6e6",
-  hoverTextColor = "#ffffff",
-  clickedTextColor = "#e6e6e6",
-  disabledTextColor = "#808080",
+  hoverTextColor = "rgb(164, 91, 242)",
+  clickedTextColor = "rgb(164, 91, 242)",
+  disabledTextColor = "#e6e6e6",
   onClick,
 }: Props) => {
   const textRef = useRef<HTMLParagraphElement>(null);
@@ -45,14 +47,15 @@ const BarMoreInformationButton = ({
 
   const getElement = (color: string) => {
     return (
-      <>
-        <img
-          className="bar-more-information-button-image"
-          src={thumbnailPath}
-        />
+      <div
+        className={
+          isSelected ? "bar-tab-selected-container" : "bar-tab-normal-container"
+        }
+      >
+        <img className="bar-tab-button-image" src={thumbnailPath} />
         <p
           ref={textRef}
-          className="bar-more-information-button-text"
+          className="bar-tab-button-text"
           style={{
             fontSize: fontSize,
             color: color,
@@ -60,7 +63,7 @@ const BarMoreInformationButton = ({
         >
           {text}
         </p>
-      </>
+      </div>
     );
   };
 
@@ -76,4 +79,4 @@ const BarMoreInformationButton = ({
   );
 };
 
-export default BarMoreInformationButton;
+export default BarTabButton;

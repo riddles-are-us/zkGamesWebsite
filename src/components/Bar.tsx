@@ -1,8 +1,8 @@
 import React from "react";
 import "./Bar.css";
 import TextButton from "./common/TextButton";
-import BarTabButton from "./common/BarTabButton";
-import BarMoreInformationButton from "./common/BarMoreInformationButton";
+import BarTabButton from "./buttons/BarTabButton";
+import BarMoreInformationButton from "./buttons/BarMoreInformationButton";
 import zkgame_logo from "../images/backgrounds/zkgame_logo.png";
 import trending from "../images/backgrounds/trending.png";
 import favorite from "../images/backgrounds/favorite.png";

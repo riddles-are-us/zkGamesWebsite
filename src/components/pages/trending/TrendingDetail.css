@@ -1,11 +1,11 @@
-.content-detail-container {
+.trending-detail-container {
   position: relative;
   width: 100%;
   height: auto;
   aspect-ratio: 1549 / 701;
 }
 
-.content-detail-list {
+.trending-detail-list {
   position: absolute;
   width: 100%;
   height: 95%;
@@ -18,7 +18,7 @@
   justify-content: flex-end;
 }
 
-.content-detail-trending-container {
+.trending-detail-trending-container {
   position: relative;
   width: 10%;
   height: auto;
@@ -28,7 +28,7 @@
   border-radius: 50px;
 }
 
-.content-detail-trending-text {
+.trending-detail-trending-text {
   position: relative;
   display: flex;
   width: 65%;
@@ -45,7 +45,7 @@
   font-weight: bold;
 }
 
-.content-detail-title-text {
+.trending-detail-title-text {
   position: relative;
   display: flex;
   width: 80%;
@@ -59,7 +59,7 @@
   font-weight: bold;
 }
 
-.content-detail-description-text {
+.trending-detail-description-text {
   position: relative;
   display: flex;
   width: 80%;
@@ -71,7 +71,7 @@
   white-space: nowrap;
 }
 
-.content-detail-play-container {
+.trending-detail-play-container {
   position: relative;
   width: 15%;
   height: auto;

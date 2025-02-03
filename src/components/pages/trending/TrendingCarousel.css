@@ -1,11 +1,11 @@
-.content-detail-background-container {
+.trending-detail-background-container {
   position: relative;
   width: 100%;
   height: auto;
   aspect-ratio: 1549 / 697;
 }
 
-.content-detail-background-image {
+.trending-detail-background-image {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -15,7 +15,7 @@
   transform: translate(-50%, -50%);
 }
 
-.content-detail-background-mask {
+.trending-detail-background-mask {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -25,7 +25,7 @@
   transform: translate(-50%, -50%);
 }
 
-.content-carousel-container {
+.trending-carousel-container {
   position: absolute;
   width: 40%;
   height: auto;
@@ -36,9 +36,9 @@
   z-index: 10;
 }
 
-.content-carousel-image-1,
-.content-carousel-image-2,
-.content-carousel-image-3 {
+.trending-carousel-image-1,
+.trending-carousel-image-2,
+.trending-carousel-image-3 {
   position: absolute;
   width: 30%;
   height: auto;
@@ -48,19 +48,19 @@
   transform: translate(-50%, -50%);
 }
 
-.content-carousel-image-1 {
+.trending-carousel-image-1 {
   left: 18%;
 }
 
-.content-carousel-image-2 {
+.trending-carousel-image-2 {
   left: 50%;
 }
 
-.content-carousel-image-3 {
+.trending-carousel-image-3 {
   left: 82%;
 }
 
-.content-carousel-btn {
+.trending-carousel-btn {
   position: absolute;
   height: 20%;
   aspect-ratio: 1;
@@ -75,10 +75,10 @@
   border-radius: 100%;
 }
 
-.content-carousel-btn.left {
+.trending-carousel-btn.left {
   left: 0%;
 }
 
-.content-carousel-btn.right {
+.trending-carousel-btn.right {
   right: 0%;
 }

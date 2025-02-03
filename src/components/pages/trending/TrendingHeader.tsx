@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./ContentBar.css";
-import search from "../images/backgrounds/search.png";
-import notification from "../images/backgrounds/notification.png";
-import user from "../images/backgrounds/user.png";
-import more from "../images/backgrounds/more.png";
+import "./TrendingHeader.css";
+import search from "../../../images/backgrounds/search.png";
+import notification from "../../../images/backgrounds/notification.png";
+import user from "../../../images/backgrounds/user.png";
+import more from "../../../images/backgrounds/more.png";
 
 const fontRatio = 3;
 
-const ContentBar = () => {
+const TrendingHeader = () => {
   const textRef = useRef<HTMLParagraphElement>(null);
   const [fontSize, setFontSize] = useState<number>(0);
   const [textWidth, setTextWidth] = useState<number>(0);
@@ -41,12 +41,16 @@ const ContentBar = () => {
   }, [textRef, fontSize]);
 
   return (
-    <div className="content-bar-container">
+    <div className="trending-header-container">
       <div className="content-search-container">
-        <img className="content-bar-search-image" alt="Search" src={search} />
+        <img
+          className="trending-header-search-image"
+          alt="Search"
+          src={search}
+        />
 
         <input
-          className="content-bar-input"
+          className="trending-header-input"
           placeholder="Search"
           type="text"
           style={{
@@ -55,18 +59,18 @@ const ContentBar = () => {
         />
       </div>
 
-      <div className="content-bar-right-list">
+      <div className="trending-header-right-list">
         <img
-          className="content-bar-notification-image"
+          className="trending-header-notification-image"
           alt="Notification"
           src={notification}
         />
 
-        <img className="content-bar-user-image" alt="User" src={user} />
+        <img className="trending-header-user-image" alt="User" src={user} />
 
         <p
           ref={textRef}
-          className="content-bar-user-name-text"
+          className="trending-header-user-name-text"
           style={{
             fontSize: fontSize,
             width: `${textWidth}px`,
@@ -75,10 +79,10 @@ const ContentBar = () => {
           Name
         </p>
 
-        <img className="content-bar-more-image" alt="More" src={more} />
+        <img className="trending-header-more-image" alt="More" src={more} />
       </div>
     </div>
   );
 };
 
-export default ContentBar;
+export default TrendingHeader;

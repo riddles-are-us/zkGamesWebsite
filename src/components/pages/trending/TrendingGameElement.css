@@ -1,8 +1,8 @@
-.content-game-card {
+.trending-game-element {
   position: relative;
 }
 
-.content-game-card-container {
+.trending-game-element-container {
   position: absolute;
   height: 90%;
   width: 90%;
@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-.content-game-card-image {
+.trending-game-element-image {
   position: relative;
   width: 100%;
   height: 45.5%;
@@ -23,13 +23,13 @@
   border-top-right-radius: 17px;
 }
 
-.content-game-card-detail-container {
+.trending-game-element-detail-container {
   position: relative;
   width: 100%;
   height: 54.5%;
 }
 
-.content-game-card-detail-title-text {
+.trending-game-element-detail-title-text {
   position: relative;
   display: flex;
   width: 80%;
@@ -43,7 +43,7 @@
   font-weight: bold;
 }
 
-.content-game-card-detail-description-text {
+.trending-game-element-detail-description-text {
   position: relative;
   display: flex;
   width: 80%;

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./ContentDetail.css";
-import TextButton from "./common/TextButton";
-import ContentCarousel from "./ContentCarousel";
-import { GameData } from "./GameDatas";
+import "./TrendingDetail.css";
+import TextButton from "../../common/TextButton";
+import TrendingCarousel from "./TrendingCarousel";
+import { GameData } from "../../GameDatas";
 
 const titleFontRatio = 18;
 const descriptionFontRatio = 60;
@@ -12,7 +12,7 @@ interface Props {
   gameData: GameData;
 }
 
-const ContentDetail = ({ gameData }: Props) => {
+const TrendingDetail = ({ gameData }: Props) => {
   const titleTextRef = useRef<HTMLParagraphElement>(null);
   const descriptionTextRef = useRef<HTMLParagraphElement>(null);
   const trendingTextRef = useRef<HTMLParagraphElement>(null);
@@ -52,13 +52,13 @@ const ContentDetail = ({ gameData }: Props) => {
   };
 
   return (
-    <div className="content-detail-container">
-      <ContentCarousel images={gameData.imagePaths} />
-      <div className="content-detail-list">
-        <div className="content-detail-trending-container">
+    <div className="trending-detail-container">
+      <TrendingCarousel images={gameData.imagePaths} />
+      <div className="trending-detail-list">
+        <div className="trending-detail-trending-container">
           <div
             ref={trendingTextRef}
-            className="content-detail-trending-text"
+            className="trending-detail-trending-text"
             style={{ fontSize: trendingFontSize }}
           >
             Trending
@@ -67,7 +67,7 @@ const ContentDetail = ({ gameData }: Props) => {
 
         <p
           ref={titleTextRef}
-          className="content-detail-title-text"
+          className="trending-detail-title-text"
           style={{ fontSize: titleFontSize }}
         >
           {gameData.title}
@@ -75,13 +75,13 @@ const ContentDetail = ({ gameData }: Props) => {
 
         <p
           ref={descriptionTextRef}
-          className="content-detail-description-text"
+          className="trending-detail-description-text"
           style={{ fontSize: descriptionFontSize }}
         >
           {gameData.description}
         </p>
 
-        <div className="content-detail-play-container">
+        <div className="trending-detail-play-container">
           <TextButton
             isDisabled={false}
             text={"Play"}
@@ -94,4 +94,4 @@ const ContentDetail = ({ gameData }: Props) => {
   );
 };
 
-export default ContentDetail;
+export default TrendingDetail;

@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./ContentList.css";
-import ContentGameCard from "./ContentGameCard";
-import Grid from "./common/Grid";
-import { gameDatas } from "./GameDatas";
+import "./TrendingGameList.css";
+import TrendingGameElement from "./TrendingGameElement";
+import Grid from "../../common/Grid";
+import { gameDatas } from "../../GameDatas";
 
 const fontRatio = 4;
 const columnCount = 4;
 
-const ContentList = () => {
+const TrendingGameList = () => {
   const rowCount = Math.ceil(gameDatas.length / columnCount);
   const textRef = useRef<HTMLParagraphElement>(null);
   const gridRef = useRef<HTMLParagraphElement>(null);
@@ -41,11 +41,11 @@ const ContentList = () => {
   }, []);
 
   return (
-    <div className="content-list-container">
-      <div className="content-list-list">
+    <div className="trending-game-list-container">
+      <div className="trending-game-list-list">
         <p
           ref={textRef}
-          className="content-list-title-text"
+          className="trending-game-list-title-text"
           style={{ fontSize: fontSize }}
         >
           Featured
@@ -53,7 +53,7 @@ const ContentList = () => {
 
         <div
           ref={gridRef}
-          className="content-list-game-card-grid"
+          className="trending-game-list-game-card-grid"
           style={{ height: gridElementHeight * rowCount }}
         >
           <Grid
@@ -64,7 +64,7 @@ const ContentList = () => {
             elements={gameDatas
               .slice(0, columnCount * rowCount)
               .map((gameData, index) => (
-                <ContentGameCard
+                <TrendingGameElement
                   key={index}
                   width={gridElementWidth}
                   height={gridElementHeight}
@@ -78,4 +78,4 @@ const ContentList = () => {
   );
 };
 
-export default ContentList;
+export default TrendingGameList;

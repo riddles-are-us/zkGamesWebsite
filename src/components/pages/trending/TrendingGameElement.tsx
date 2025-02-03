@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./ContentGameCard.css";
-import { GameData } from "./GameDatas";
+import "./TrendingGameElement.css";
+import { GameData } from "../../GameDatas";
 
 const titleFontRatio = 2.5;
 const descriptionFontRatio = 5;
@@ -11,7 +11,7 @@ interface Props {
   gameData: GameData;
 }
 
-const ContentGameCard = ({ width, height, gameData }: Props) => {
+const TrendingGameElement = ({ width, height, gameData }: Props) => {
   const titleTextRef = useRef<HTMLParagraphElement>(null);
   const descriptionTextRef = useRef<HTMLParagraphElement>(null);
   const [titleFontSize, setTitleFontSize] = useState<number>(0);
@@ -39,25 +39,28 @@ const ContentGameCard = ({ width, height, gameData }: Props) => {
 
   return (
     <div
-      className="content-game-card"
+      className="trending-game-element"
       style={{
         width: `${width}px`,
         height: `${height}px`,
       }}
     >
-      <div className="content-game-card-container" onClick={onClickCard}>
-        <img className="content-game-card-image" src={gameData.thumbnailPath} />
-        <div className="content-game-card-detail-container">
+      <div className="trending-game-element-container" onClick={onClickCard}>
+        <img
+          className="trending-game-element-image"
+          src={gameData.thumbnailPath}
+        />
+        <div className="trending-game-element-detail-container">
           <p
             ref={titleTextRef}
-            className="content-game-card-detail-title-text"
+            className="trending-game-element-detail-title-text"
             style={{ fontSize: titleFontSize }}
           >
             {gameData.title}
           </p>
           <p
             ref={descriptionTextRef}
-            className="content-game-card-detail-description-text"
+            className="trending-game-element-detail-description-text"
             style={{ fontSize: descriptionFontSize }}
           >
             {gameData.description}
@@ -68,4 +71,4 @@ const ContentGameCard = ({ width, height, gameData }: Props) => {
   );
 };
 
-export default ContentGameCard;
+export default TrendingGameElement;

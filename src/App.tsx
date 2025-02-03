@@ -1,5 +1,5 @@
 import "./App.css";
-import { Main } from "./components/Main";
+import { Trending } from "./components/pages/trending/Trending";
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,10 +16,7 @@ function App() {
           path="trending/"
           element={<Navigate to="/trending/automata" />}
         />
-        <Route path="trending/:gameId" element={<Main />} />
-
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="trending/:gameId" element={<Trending />} />
       </Routes>
     </Router>
   );

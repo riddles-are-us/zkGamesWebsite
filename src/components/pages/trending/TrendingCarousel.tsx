@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import mask from "../images/backgrounds/mask.png";
-import "./ContentCarousel.css"; // External CSS file for styling
+import mask from "../../../images/backgrounds/mask.png";
+import "./TrendingCarousel.css";
 
 interface Props {
   images: string[];
 }
 
-const ContentCarousel = ({ images }: Props) => {
+const TrendingCarousel = ({ images }: Props) => {
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(1);
   const [index3, setIndex3] = useState(2);
@@ -26,23 +26,27 @@ const ContentCarousel = ({ images }: Props) => {
 
   return (
     <>
-      <div className="content-detail-background-container">
+      <div className="trending-detail-background-container">
         <img
-          className="content-detail-background-container"
+          className="trending-detail-background-container"
           alt="Game"
           src={images[index1]}
         />
-        <img className="content-detail-background-mask" alt="mask" src={mask} />
+        <img
+          className="trending-detail-background-mask"
+          alt="mask"
+          src={mask}
+        />
       </div>
-      <div className="content-carousel-container">
-        <img className="content-carousel-image-1" src={images[index1]} />
-        <img className="content-carousel-image-2" src={images[index2]} />
-        <img className="content-carousel-image-3" src={images[index3]} />
+      <div className="trending-carousel-container">
+        <img className="trending-carousel-image-1" src={images[index1]} />
+        <img className="trending-carousel-image-2" src={images[index2]} />
+        <img className="trending-carousel-image-3" src={images[index3]} />
 
-        <button className="content-carousel-btn left" onClick={prevSlide}>
+        <button className="trending-carousel-btn left" onClick={prevSlide}>
           ◀
         </button>
-        <button className="content-carousel-btn right" onClick={nextSlide}>
+        <button className="trending-carousel-btn right" onClick={nextSlide}>
           ▶
         </button>
       </div>
@@ -50,4 +54,4 @@ const ContentCarousel = ({ images }: Props) => {
   );
 };
 
-export default ContentCarousel;
+export default TrendingCarousel;
