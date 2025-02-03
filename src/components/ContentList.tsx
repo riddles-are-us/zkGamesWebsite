@@ -65,12 +65,10 @@ const ContentList = () => {
               .slice(0, columnCount * rowCount)
               .map((gameData, index) => (
                 <ContentGameCard
+                  key={index}
                   width={gridElementWidth}
                   height={gridElementHeight}
-                  title={gameData.title}
-                  description={gameData.description}
-                  link={gameData.link}
-                  thumbnailPath={gameData.thumbnailPath}
+                  gameData={gameData}
                 />
               ))}
           />

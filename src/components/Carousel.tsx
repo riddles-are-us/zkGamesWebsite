@@ -39,8 +39,12 @@ const Carousel = ({ images }: Props) => {
         <img className="carousel-image-2" src={images[index2]} />
         <img className="carousel-image-3" src={images[index3]} />
 
-        <button className="carousel-btn left" onClick={prevSlide} />
-        <button className="carousel-btn right" onClick={nextSlide} />
+        <button className="carousel-btn left" onClick={prevSlide}>
+          ◀
+        </button>
+        <button className="carousel-btn right" onClick={nextSlide}>
+          ▶
+        </button>
       </div>
     </>
   );

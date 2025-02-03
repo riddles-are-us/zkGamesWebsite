@@ -1,17 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ContentDetail.css";
 import TextButton from "./common/TextButton";
-import automata1 from "../images/datas/automata/1.png";
-import automata2 from "../images/datas/automata/2.png";
-import automata3 from "../images/datas/automata/3.png";
-import automata4 from "../images/datas/automata/4.png";
 import Carousel from "./Carousel";
+import { GameData } from "./GameDatas";
 
 const titleFontRatio = 18;
 const descriptionFontRatio = 60;
 const trendingFontRatio = 4;
 
-const ContentDetail = () => {
+interface Props {
+  gameData: GameData;
+}
+
+const ContentDetail = ({ gameData }: Props) => {
   const titleTextRef = useRef<HTMLParagraphElement>(null);
   const descriptionTextRef = useRef<HTMLParagraphElement>(null);
   const trendingTextRef = useRef<HTMLParagraphElement>(null);
@@ -46,9 +47,13 @@ const ContentDetail = () => {
     };
   }, []);
 
+  const onClickPlay = () => {
+    window.open(gameData.link, "_blank");
+  };
+
   return (
     <div className="content-detail-container">
-      <Carousel images={[automata1, automata2, automata3, automata4]} />
+      <Carousel images={gameData.imagePaths} />
       <div className="content-detail-list">
         <div className="content-detail-trending-container">
           <div
@@ -65,7 +70,7 @@ const ContentDetail = () => {
           className="content-detail-title-text"
           style={{ fontSize: titleFontSize }}
         >
-          Automata
+          {gameData.title}
         </p>
 
         <p
@@ -73,7 +78,7 @@ const ContentDetail = () => {
           className="content-detail-description-text"
           style={{ fontSize: descriptionFontSize }}
         >
-          Information Information Information Information Information
+          {gameData.description}
         </p>
 
         <div className="content-detail-play-container">
@@ -81,9 +86,7 @@ const ContentDetail = () => {
             isDisabled={false}
             text={"Play"}
             fontRatio={8}
-            onClick={() => {
-              /* */
-            }}
+            onClick={onClickPlay}
           />
         </div>
       </div>
