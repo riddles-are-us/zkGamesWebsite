@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ContentDetail.css";
 import TextButton from "./common/TextButton";
-import Carousel from "./Carousel";
+import ContentCarousel from "./ContentCarousel";
 import { GameData } from "./GameDatas";
 
 const titleFontRatio = 18;
@@ -53,7 +53,7 @@ const ContentDetail = ({ gameData }: Props) => {
 
   return (
     <div className="content-detail-container">
-      <Carousel images={gameData.imagePaths} />
+      <ContentCarousel images={gameData.imagePaths} />
       <div className="content-detail-list">
         <div className="content-detail-trending-container">
           <div

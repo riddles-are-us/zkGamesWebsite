@@ -25,20 +25,20 @@
   transform: translate(-50%, -50%);
 }
 
-.carousel-container {
+.content-carousel-container {
   position: absolute;
   width: 40%;
   height: auto;
   aspect-ratio: 4 / 1;
   left: 75%;
-  bottom: 10%;
+  bottom: 2%;
   transform: translate(-50%, 0);
   z-index: 10;
 }
 
-.carousel-image-1,
-.carousel-image-2,
-.carousel-image-3 {
+.content-carousel-image-1,
+.content-carousel-image-2,
+.content-carousel-image-3 {
   position: absolute;
   width: 30%;
   height: auto;
@@ -48,19 +48,19 @@
   transform: translate(-50%, -50%);
 }
 
-.carousel-image-1 {
+.content-carousel-image-1 {
   left: 18%;
 }
 
-.carousel-image-2 {
+.content-carousel-image-2 {
   left: 50%;
 }
 
-.carousel-image-3 {
+.content-carousel-image-3 {
   left: 82%;
 }
 
-.carousel-btn {
+.content-carousel-btn {
   position: absolute;
   height: 20%;
   aspect-ratio: 1;
@@ -75,10 +75,10 @@
   border-radius: 100%;
 }
 
-.carousel-btn.left {
+.content-carousel-btn.left {
   left: 0%;
 }
 
-.carousel-btn.right {
+.content-carousel-btn.right {
   right: 0%;
 }

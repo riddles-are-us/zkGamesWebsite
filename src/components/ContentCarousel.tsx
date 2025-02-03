@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import mask from "../images/backgrounds/mask.png";
-import "./Carousel.css"; // External CSS file for styling
+import "./ContentCarousel.css"; // External CSS file for styling
 
 interface Props {
   images: string[];
 }
 
-const Carousel = ({ images }: Props) => {
+const ContentCarousel = ({ images }: Props) => {
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(1);
   const [index3, setIndex3] = useState(2);
@@ -34,15 +34,15 @@ const Carousel = ({ images }: Props) => {
         />
         <img className="content-detail-background-mask" alt="mask" src={mask} />
       </div>
-      <div className="carousel-container">
-        <img className="carousel-image-1" src={images[index1]} />
-        <img className="carousel-image-2" src={images[index2]} />
-        <img className="carousel-image-3" src={images[index3]} />
+      <div className="content-carousel-container">
+        <img className="content-carousel-image-1" src={images[index1]} />
+        <img className="content-carousel-image-2" src={images[index2]} />
+        <img className="content-carousel-image-3" src={images[index3]} />
 
-        <button className="carousel-btn left" onClick={prevSlide}>
+        <button className="content-carousel-btn left" onClick={prevSlide}>
           ◀
         </button>
-        <button className="carousel-btn right" onClick={nextSlide}>
+        <button className="content-carousel-btn right" onClick={nextSlide}>
           ▶
         </button>
       </div>
@@ -50,4 +50,4 @@ const Carousel = ({ images }: Props) => {
   );
 };
 
-export default Carousel;
+export default ContentCarousel;
