@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TrendingGameElement.css";
 import { GameData } from "../../GameDatas";
+import TextButton from "../../common/TextButton";
 
 const titleFontRatio = 2.5;
 const descriptionFontRatio = 5;
@@ -37,6 +38,10 @@ const TrendingGameElement = ({ width, height, gameData }: Props) => {
     navigate(`/trending/${gameData.id}`);
   };
 
+  const onClickPlay = () => {
+    window.open(gameData.link, "_blank");
+  };
+
   return (
     <div
       className="trending-game-element"
@@ -65,6 +70,15 @@ const TrendingGameElement = ({ width, height, gameData }: Props) => {
           >
             {gameData.description}
           </p>
+
+          <div className="trending-game-element-detail-play-container">
+            <TextButton
+              isDisabled={false}
+              text={"Play"}
+              fontRatio={8}
+              onClick={onClickPlay}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -54,3 +54,17 @@
   margin: 0;
   margin-left: 5%;
 }
+
+.trending-game-element-detail-play-container {
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin-left: 5%;
+  aspect-ratio: 211 / 56;
+  background: linear-gradient(
+    180deg,
+    rgb(164, 91, 242) 0%,
+    rgb(102, 112, 251) 100%
+  );
+  border-radius: 10px;
+}
